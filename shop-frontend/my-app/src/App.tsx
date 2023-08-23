@@ -15,6 +15,7 @@ import SellerProducts from './Components/Dashboard/SellerDashboard/SellerProduct
 import AllProductsComponent from './Components/Dashboard/ShopperDashboard/AllProductsComponent';
 import CurrentOrderComponent from './Components/Dashboard/ShopperDashboard/CurrentOrderComponent';
 import ShopperOrdersComponent from './Components/Dashboard/ShopperDashboard/ShopperOrdersComponent';
+import UpdatePasswordComponent from './Components/Shared/UpdatePasswordComponent';
 function App() {
 
   const navigate = useNavigate();
@@ -114,6 +115,7 @@ const shopperStyle={
               <Route path="/dashboard/sellers" element ={<ViewSellersComponent/>}/>
               <Route path="/dashboard/orders" element ={<ViewOrdersComponent/>}/>
               <Route path="/dashboard/updateAccount" element ={<UpdateAccountComponent/>}/>
+              <Route path="/dashboard/updatePassword" element ={<UpdatePasswordComponent/>}/>
 
 
             </Route>
@@ -133,6 +135,8 @@ const shopperStyle={
               <Route path="/dashboard/orders" element ={<SellerOrdersComponent/>}/>
               <Route path="/dashboard/products" element ={<SellerProducts/>}/>
               <Route path="/dashboard/updateAccount" element ={<UpdateAccountComponent/>}/>
+              <Route path="/dashboard/updatePassword" element ={<UpdatePasswordComponent/>}/>
+
           </Route>
           <Route path="/" element={<LoginComponent />} />
           <Route path="/login" element={<LoginComponent />} />
@@ -149,6 +153,8 @@ const shopperStyle={
               <Route path="/dashboard/currentOrder" element={<CurrentOrderComponent />} />
               <Route path="/dashboard/updateAccount" element ={<UpdateAccountComponent/>}/>\
               <Route path="/dashboard/myOrders" element ={<ShopperOrdersComponent/>}/>
+              <Route path="/dashboard/updatePassword" element ={<UpdatePasswordComponent/>}/>
+
             </Route>
             <Route path="/" element={<LoginComponent />} />
             <Route path="/login" element={<LoginComponent />} />

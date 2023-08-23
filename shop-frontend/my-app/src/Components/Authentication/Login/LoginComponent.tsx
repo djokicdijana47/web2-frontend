@@ -87,7 +87,11 @@ export default function () {
           toast.error(response.data);
 
         }
-        else{
+        else if (response.data == "" || response.data == undefined){
+          toast.error("Wrong email or password, please try again");
+        }
+        else
+        {
         toast.success("Logging in...");
         localStorage.setItem("userToken", response.data)
         localStorage.setItem("email", email);
@@ -99,9 +103,7 @@ export default function () {
         }
       })
       .catch(error =>{
-        if(error.response.status == 401){
-            toast.error(error.response.data);
-        } 
+            toast.error("Wrong email or password, please try again");
       });
 
     }

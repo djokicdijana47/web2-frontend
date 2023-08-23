@@ -26,6 +26,8 @@ function NavbarComponent() {
                 <Nav.Link href="/dashboard/orders">Orders</Nav.Link>
                 <NavDropdown title="Profile" id="basic-nav-dropdown" >
                 <NavDropdown.Item href="/dashboard/updateAccount">Update profile</NavDropdown.Item>
+                <NavDropdown.Item href="/dashboard/updatePassword">Update password</NavDropdown.Item>
+
                 <NavDropdown.Item onClick={logout}> Log out </NavDropdown.Item>
                 </NavDropdown>
             </Nav>
@@ -46,6 +48,7 @@ function NavbarComponent() {
                 <Nav.Link href="/dashboard/orders">My orders</Nav.Link>
                 <NavDropdown title="Profile" id="basic-nav-dropdown">
                 <NavDropdown.Item href="/dashboard/updateAccount">Update profile</NavDropdown.Item>
+                <NavDropdown.Item href="/dashboard/updatePassword">Update password</NavDropdown.Item>
                 <NavDropdown.Item onClick={logout}> Log out </NavDropdown.Item>
                 </NavDropdown>
             </Nav>
@@ -66,6 +69,7 @@ function NavbarComponent() {
                 <Nav.Link href="/dashboard/myOrders">My orders</Nav.Link>
                 <NavDropdown title="Profile" id="basic-nav-dropdown">
                 <NavDropdown.Item href="/dashboard/updateAccount">Update profile</NavDropdown.Item>
+                <NavDropdown.Item href="/dashboard/updatePassword">Update password</NavDropdown.Item>
                 <NavDropdown.Item onClick={logout}> Log out </NavDropdown.Item>
                 </NavDropdown>
             </Nav>
