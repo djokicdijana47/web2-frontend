@@ -97,7 +97,6 @@ export default function () {
         localStorage.setItem("email", email);
         localStorage.setItem("cart", JSON.stringify(cart));
         localStorage.setItem("imageUrl", response.data.imageUrl);
-        console.log(response.data);
         navigate("../dashboard");
         //window.location.reload();
         }

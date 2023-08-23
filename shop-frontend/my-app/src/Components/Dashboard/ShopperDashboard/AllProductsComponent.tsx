@@ -55,7 +55,7 @@ const AllProductsComponent = () => {
 
 
     return(
-        <div className="container">
+        <div className="container mt-5">
             <div><Toaster/></div>
 
         <Container>

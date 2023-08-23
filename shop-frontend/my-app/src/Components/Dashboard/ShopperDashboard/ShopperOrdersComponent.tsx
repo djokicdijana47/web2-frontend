@@ -74,7 +74,7 @@ const ShopperOrdersComponent = () => {
     }
     
     return (
-        <main className="container">
+        <main className="container mt-5">
           <div><Toaster/></div>
             <Accordion defaultExpanded={true}>
               <AccordionSummary expandIcon={<ExpandMoreIcon />}

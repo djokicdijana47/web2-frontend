@@ -52,7 +52,7 @@ function ViewOrdersComponent() {
         getOrders();
     }, []);
     return (
-        <div className="container">
+        <div className="container mt-5">
             <Accordion
             defaultExpanded={true} >
               <AccordionSummary
