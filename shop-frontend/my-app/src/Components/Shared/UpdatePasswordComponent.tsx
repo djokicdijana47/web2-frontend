@@ -37,7 +37,7 @@ export default function(){
     }
 
     return (
-        <div className="container">
+        <div className="container mt-5">
         <Container component="main" maxWidth="xl">
       <div><Toaster/></div>
       <Box
@@ -67,7 +67,7 @@ export default function(){
               }}
             >
               <Typography component="h1" variant="h6">
-                Update account
+                Update password
               </Typography>
               <Box
                 sx={{ mt: 0,  display: "flex",
